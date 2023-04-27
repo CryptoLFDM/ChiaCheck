@@ -8,7 +8,7 @@ from check_plot import check_plot
 @click.option("--chia_root_path", required=True, help="chia root path", type=str)
 @click.option("--challenge", default=32, help="The number of challenge for each plot", type=int)
 def main(pseudo, challenge, chia_root_path):
-#    check_plot(challenge, chia_root_path)
+    check_plot(challenge, chia_root_path)
     dissect_log(pseudo, challenge)
 
 
